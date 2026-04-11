@@ -38,6 +38,6 @@ todo (
 
    Service : 'login',
    Slave   : 'GO',
-   App_type: 'login'
+   App_type: 'Go'
 
 )
