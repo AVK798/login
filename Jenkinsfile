@@ -31,11 +31,9 @@
 //     }
 // }
 @Library('Todo-App') _
-
 todo (
 
    Service : 'login',
    Slave   : 'GO',
    App_type: 'Go'
-
 )
