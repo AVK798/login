@@ -10,5 +10,4 @@ RUN go build -o login-service
 FROM ubuntu:22.04
 WORKDIR /app
 COPY --from=builder /app/login-service .
-EXPOSE 8080
 CMD ["./login-service"]
