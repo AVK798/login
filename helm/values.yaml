@@ -9,7 +9,7 @@ replicaCount: 1
 image:
   repository: 400138960249.dkr.ecr.us-east-1.amazonaws.com/login:latest
   # This sets the pull policy for images.
-  pullPolicy: always
+  pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
 
