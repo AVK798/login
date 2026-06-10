@@ -35,7 +35,7 @@ spec:
       containers:
         - name: {{ .Chart.Name }}
           envFrom:
-             - configMapRef:
+            - configMapRef:
                name: app-config
           {{- with .Values.securityContext }}
           securityContext:
