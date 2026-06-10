@@ -57,9 +57,9 @@ service:
   type: ClusterIP
   # This sets the ports more information can be found here: https://kubernetes.io/docs/concepts/services-networking/service/#field-spec-ports
   port: 80
-  targetPort: 8080
+  targetPort: 3001
 container:
-  port: 8080
+  port: 3001
 
 # This block is for setting up the ingress for more information can be found here: https://kubernetes.io/docs/concepts/services-networking/ingress/
 ingress:
@@ -166,5 +166,5 @@ tolerations: []
 affinity: {}
 
 env:
-  AUTH_API_PORT: "8080"
+  AUTH_API_PORT: "3001"
   USERS_API_ADDRESS: "http://users:80"
