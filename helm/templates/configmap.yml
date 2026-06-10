@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: app-config
 data:
-  AUTH_API_PORT: {{ .Values.ConfigMap.AUTH_API_PORT}}
-  USERS_API_ADDRESS: {{ .Values.ConfigMap.USERS_API_ADDRESS }}
+  AUTH_API_PORT: {{ .Values.ConfigMap.AUTH_API_PORT | quote}}
+  USERS_API_ADDRESS: {{ .Values.ConfigMap.USERS_API_ADDRESS | quote }}
